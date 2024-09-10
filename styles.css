@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  background-color: #68BDCA;
+}
+
+
+/* WELCOME */
+#welcome {
+  font-family: 'Amatic SC', cursive;
+  color: #FCFFFF;
+  background: url("https://images.unsplash.com/photo-1423589989400-cc0270157ed0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=458cf2662814c68b6eb24d9e55801fa0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome h1,
+#portfolio h1 {
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+#welcome h3,
+#portfolio h3 {
+  font-size: 2vw;
+}
+
+/* DOWN ARROW */
+#press {
+  width: 100px;
+  border: solid 4px white;
+  border-radius: 40px;
+  margin-top: 20%;
+  transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
+}
+
+#press:hover {
+  background-color: #5BC2B4;
+  opacity: 0.8;
+  margin-top: 21%;
+  transition: background-color 0.6s, opacity 0.6s, margin-top 1s;
+}
+
+/* ABOUT */
+#about {
+  background-color: #0A3739;
+  padding: 5%;
+  height: 100vh;
+  width: auto;
+}
+
+#about h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: left;
+}
+
+#about p {
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+/* EMAIL BUTTON */
+#email {
+  background-color: #26816E;
+  padding: 2%;
+  border-radius: 40px;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+  font-size: 1.5vw;
+}
+#portScroll {
+  background-color: #26816E;
+  padding: 2%;
+  border-radius: 40px;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+  font-size: 20px ;
+}
+
+#portScroll:hover {
+  box-shadow: 5px 15px 30px #062928;
+  background-color: #1A616C;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+  cursor: pointer;
+
+}
+
+#email:hover {
+  box-shadow: 5px 15px 30px #062928;
+  background-color: #1A616C;
+  transition: box-shadow 0.5s, color 0.8s, background-color 0.5s;
+  cursor: pointer;
+}
+
+
+/* PORTFOLIO */
+#portfolio {
+  font-family: 'Amatic SC', cursive;
+  background-color: #68BDCA;
+  text-decoration: none;
+  color: white;
+  padding: 5%;
+  width: auto;
+  height: 100vh;
+}
+
+#portfolio h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2vw;
+}
+
+#port img {
+  width: 100%;
+  max-width: 500px;
+  opacity: 0.5;
+  transition: opacity 0.5s, box-shadow 0.5s;
+}
+
+#port img:hover {
+  opacity: 1;
+  box-shadow: 0px 10px 50px #406D91;
+  transition: opacity 0.5s, box-shadow 0.5s;
+}
+
+
+/* OVERLAY */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 5vw;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Close Button */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 10vw;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  #welcome h1 {
+      font-size: 10vw;
+  }
+
+  #welcome h3 {
+      font-size: 6vw;
+  }
+
+  #press {
+      margin-top: 50%;
+  }
+
+  #about h1 {
+      font-size: 5vw;
+  }
+
+  #about p {
+      font-size: 4vw;
+  }
+
+  #portfolio h3 {
+      font-size: 4vw;
+  }
+
+  #port img {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  #openmenu {
+      font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .overlay a {
+      font-size: 8vw;
+  }
+  .closebtn {
+      font-size: 10vw;
+      top: 15px;
+      right: 35px;
+  }
+}
